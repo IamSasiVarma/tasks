@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hovering buttons navbar</title>
+    <style>
+        nav {
+            background-color: white;
+            color: white;
+            width: 200px; 
+            height: 100%; 
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            overflow-y: auto; 
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px; 
+        }
+
+        .button-1 { background-color: seagreen; }
+        .button-2 { background-color: rgb(25, 181, 224) }
+        .button-3 { background-color: orangered; }
+        .button-4 { background-color: rgb(75, 84, 84); }
+
+        button {
+            color: white;
+            padding: 20px;
+            border: none;
+            cursor: pointer;
+            width: 80px; 
+            height: 100px;
+        }
+
+        button:hover {
+            width: 100px;
+        }
+
+        .text {
+            position: absolute;
+            right: 1100px;
+            background-color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><button class="button-1"></button></li>
+            <li><button class="button-2"></button></li>
+            <li><button class="button-3"></button></li>
+            <li><button class="button-4"></button></li>
+        </ul>
+    </nav>
+    <div class="text">
+        <h2>Hoverable Sidenav Buttons</h2>
+        <p>Hover over the buttons in the left side.</p>
+    </div>
+</body>
+</html>

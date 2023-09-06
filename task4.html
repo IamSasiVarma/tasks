@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        .text-input {
+            display: inline-block;
+            vertical-align: middle;
+            padding: 5px;
+            border: 2px solid #ccc;
+            border-radius: 1px;
+        }
+        .text-input-pass {
+            display: inline-block;
+            vertical-align: middle;
+            padding: 5px;
+            border: 2px solid #ccc;
+            border-radius: 1px;
+            width: 150px;
+        }
+
+        .field-label {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 16px;
+            color: #333;
+            width: 150px;
+        }
+        .form-group {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-group">
+        <label for="fullname" class="field-label">Full Name:</label>
+        <input type="text" id="fullname" class="text-input" placeholder="Enter your full name">
+    </div>
+    
+    <div class="form-group">
+        <label for="username" class="field-label">Username:</label>
+        <input type="username" id="username" class="text-input" placeholder="Enter your user name">
+    </div>
+
+    <div class="form-group">
+        <label for="password" class="field-label">Password:</label>
+        <input type="password" id="password" class="text-input-pass" placeholder="Enter your password">
+    </div>
+
+    <div class="form-group">
+        <label for="Re password" class="field-label">Re password:</label>
+        <input type="password" id="Re password" class="text-input-pass" placeholder="Enter your user Re password">
+    </div>
+
+    <div class="form-group">
+        <label for="address" class="field-label">Address:</label>
+        <input type="address" id="address" class="text-input" placeholder="Enter your address">
+    </div>
+
+    <div class="form-group">
+        <label for="age" class="field-label">Age:</label>
+        <input type="number" id="age" class="text-input" placeholder="Enter your age">
+    </div>
+
+    <div class="form-group">
+        <label for="gender" class="field-label">Gender:</label>
+        <select id="gender" name="gender" class="text-input">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+    </div>
+    <button type="button" class="save-button">Save</button>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical & Horizontal Navigation Bars</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: white;
+        }
+
+        .navbar {
+            width: 200px;
+            background-color: skyblue;
+            color: white;
+            border: 1px solid #ccc;
+        }
+        
+
+        .home {
+            background-color: orange;
+            padding: 10px;
+            color: aliceblue;
+        }
+
+        .section {
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            color: blue;
+        }
+
+        .horizontal-navbar {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            background-color: blue;
+            height: 50px;
+            color: white;
+            margin-left: 20px;
+        }
+
+        .horizontal-section {
+            padding: 16px;
+            cursor: pointer;
+            color: blue;
+            background-color: #ccc;
+            margin-right: 1px;
+        }
+        .horizontal-section1 {
+            padding: 16px;
+
+            cursor: pointer;
+            color: aliceblue;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="home">Home</div>
+            <div class="section">Java</div>
+            <div class="section">CSS</div>
+            <div class="section">HTML</div>
+            <div class="section">Bootstrap</div>
+        </div>
+        <div class="horizontal-navbar">
+            <div class="horizontal-section1">Home</div>
+            <div class="horizontal-section">Java</div>
+            <div class="horizontal-section">HTML</div>
+            <div class="horizontal-section">CSS</div>
+            <div class="horizontal-section">---</div>
+        </div>
+    </div>
+</body>
+</html>

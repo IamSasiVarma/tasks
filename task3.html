@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rectangular Box with Links</title>
+    <style>
+        .box {
+            width: 900px;
+            padding: 10px;
+            border: 1px solid black;
+            margin: 0 auto;
+            background-color: gainsboro;
+        }
+
+        p {
+            text-align: left;
+        }
+
+        .link {
+            text-align: left;
+            margin-top: 10px;
+        }
+
+        .link a {
+            display: inline-block;
+            text-decoration: underline;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>Click any of the following links</p>
+        <div class="link">
+            <a href="https://example.com">Opens in New</a>
+            <span class="separator">|</span>
+            <a href="https://example2.com">Opens in self</a>
+            <span class="separator">|</span>
+            <a href="https://example3.com">Opens in parent</a>
+            <span class="separator">|</span>
+            <a href="https://example4.com">Opens in body</a>
+            <span class="separator">|</span>
+            <a href="https://example5.com">Send email</a>
+        </div>
+    </div>
+</body>
+</html>
